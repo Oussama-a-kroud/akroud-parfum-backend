@@ -8,6 +8,9 @@ use App\Http\Controllers\Api\CommandeController;
 Route::get('/', function () {
     return response()->json(['message' => 'Akroud Parfum API is working perfectly! 🚀']);
 });
+Route::get('/test-perfumes', function () {
+    return response()->json(['message' => 'Test works!']);
+});
 
 // L'adresse API bach njibo la liste d rway7
 Route::get('/perfumes', [PerfumeController::class, 'index']);
